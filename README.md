@@ -132,7 +132,7 @@ Then open `http://localhost:8501` in your browser.
 
 **Karthik** — MS Computer Science, University of North Texas  
 GitHub: [@karthik0987](https://github.com/karthik0987)  
-LinkedIn: [linkedin.com/in/karthik](https://linkedin.com/in/karthik)
+LinkedIn: [linkedin.com/in/karthik](https://www.linkedin.com/in/karthik-etukuri/)
 
 ---
 
