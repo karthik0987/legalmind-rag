@@ -20,10 +20,10 @@ Legal text is dense, citation-heavy, and unforgiving of inaccuracies. General-pu
 User Query
     │
     ▼
-HuggingFace Embeddings (all-MiniLM-L6-v2)
+HuggingFace Embeddings (BAAI/bge-base-en-v1.5)
     │
     ▼
-ChromaDB Vector Store  ◄──── Legal Documents (data/)
+FAISS Vector Store  ◄──── Legal Documents (data/)
     │
     ▼
 Top-k Relevant Chunks (chunk_overlap=50)
@@ -42,15 +42,17 @@ Grounded Answer
 | Layer | Tool |
 |---|---|
 | Orchestration | LangChain |
-| Embeddings | HuggingFace `all-MiniLM-L6-v2` |
-| Vector Store | ChromaDB |
+| Embeddings | HuggingFace `BAAI/bge-base-en-v1.5` |
+| Vector Store | FAISS |
 | Language Model | `flan-t5-base` |
 | Frontend | Streamlit |
 | Evaluation | RAGAS Framework |
 
 ---
 
-## 📊 Evaluation Results (RAGAS)
+## 📊 Evaluation Results
+
+> ⚠️ These numbers are from the v1.0 baseline (MiniLM embeddings + basic prompt) and are now outdated after the embedding/prompt upgrade. `src/evaluator.py` also doesn't actually use RAGAS yet — it's a placeholder cosine-similarity check. Real RAGAS scoring is on the roadmap; until then, treat this table as historical, not current.
 
 Evaluated on legal domain Q&A (ADA / accessibility law documents):
 
