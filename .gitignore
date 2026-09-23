@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables / secrets
+.env
+
+# Vector store (rebuildable artifact, not source code)
+vectorstore/
+
+# OS junk
+.DS_Store
